@@ -10,6 +10,7 @@ public class LogoutController {
     private LogoutInputBoundary logoutUseCaseInteractor;
 
     public LogoutController(LogoutInputBoundary logoutUseCaseInteractor) {
+        this.logoutUseCaseInteractor = logoutUseCaseInteractor;
         // TODO: Save the interactor in the instance variable.
     }
 
@@ -18,5 +19,6 @@ public class LogoutController {
      */
     public void execute() {
         // TODO: run the use case interactor for the logout use case
+        logoutUseCaseInteractor.execute();
     }
 }
